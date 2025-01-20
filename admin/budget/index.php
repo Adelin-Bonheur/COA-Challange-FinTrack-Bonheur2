@@ -38,9 +38,11 @@
 						$qry = $conn->query("SELECT r.*,c.category,c.balance from `running_balance` r inner join `categories` c on r.category_id = c.id where c.status=1 and r.balance_type = 1 order by unix_timestamp(r.date_created) desc");
 						while($row = $qry->fetch_assoc()):
 							foreach($row as $k=> $v){
-								$row[$k] = trim(stripslashes($v));
-							}
-                            $row['remarks'] = strip_tags(stripslashes(html_entity_decode($row['remarks'])));
+								// Ensure $v is not null before calling stripslashes
+            $row[$k] = trim(stripslashes($v ?? ''));
+        }
+        // Ensure remarks is not null before processing
+        $row['remarks'] = strip_tags(stripslashes(html_entity_decode($row['remarks'] ?? '')));
 					?>
 						<tr>
 							<td class="text-center"><?php echo $i++; ?></td>
