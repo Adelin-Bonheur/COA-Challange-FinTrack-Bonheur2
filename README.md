@@ -1,6 +1,10 @@
 # COA-Challange-FinTrack-Bonheur2
 FinTrack
 
+WebApp Link: http://fintrack-bon.atwebpages.com/
+
+FinTrack Web App Explaination Video: https://youtu.be/8exU2KKrMEk
+
 Use the following credentials to log in:  
    - **Username**: admin  
    - **Password**: admin123
