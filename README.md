@@ -1,6 +1,10 @@
 # COA-Challange-FinTrack-Bonheur2
 FinTrack
 
+Use the following credentials to log in:  
+   - **Username**: admin  
+   - **Password**: admin123
+
 ## **Description**  
 This project is used to track all user expenses, setting a budget not to exceed and notify when exceeded.  
 
@@ -27,7 +31,7 @@ To set up this project locally, follow these steps:
   Start (From 4:47 to 6:32)
 
 3. Configure the database connection:  
-   - Open the `config.php` or `DBConnection.php` file.  
+   - Open the `initialize.php` file.  
    - Update the database credentials:  
      ```php  
      $servername = "your_server";  
@@ -45,22 +49,29 @@ To set up this project locally, follow these steps:
    - **Username**: admin  
    - **Password**: admin123  
 
-## **Contributing**  
-Contributions are welcome! Please follow these steps:  
-1. Fork the repository.  
-2. Create a new branch: `git checkout -b feature-name`.  
-3. Commit your changes: `git commit -m "Description of changes"`.  
-4. Push to the branch: `git push origin feature-name`.  
-5. Open a Pull Request.  
+## **How System works?** 
 
-## **License**  
-This project is licensed under the [Your License] License. See the `LICENSE` file for more details.  
+After you logged in you reach the Dashboard Page.
+
+On that page you will see **Current Overall Budget** which shows all budget set to be used in total.
+When the Budget exceeds 100000 you will see a red notification saying **Budget Exceeded**
+
+**Today's Budget Entries** For the budget amount entered the day we are on.
+
+**Today's Budget Expenses** For money spent on the day we are on.
+
+**Buget Management** on  side bar menu to used for adding budgets in categories.
+
+**Transactions** for showing all transactions (expenses) and to add expenses (transactions).
+
+**Reports** to generate budget and transaction reports.
+
+**Categories** to add categories for things user spent money on, for them to be given a budget.
+
+**Settings** to change system logo or name.
+
 
 ## **Contact**  
 If you have any questions or issues, feel free to reach out:  
-- **Email**: [your-email@example.com]  
-- **GitHub**: [https://github.com/yourusername]  
-
----
-
-You can adjust the sections based on your specific project needs. Let me know if you’d like help tailoring it further!
+- **Email**: adelinbonheur@gmail.com 
+- **GitHub**: https://github.com/Adelin-Bonheur
